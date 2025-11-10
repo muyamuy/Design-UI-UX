@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dress Anak Sweet Blossom | Mozation</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fff6f8; /* pink muda lembut */
+      color: #333;
+      padding: 30px 50px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #f9cbd5;
+      padding-bottom: 12px;
+      margin-bottom: 25px;
+    }
+
+    header .logo {
+      font-weight: 600;
+      font-size: 22px;
+      color: #f28ca5;
+    }
+
+    header nav a {
+      margin: 0 10px;
+      color: #f28ca5;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    .search-cart {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .search input {
+      padding: 6px 12px;
+      border-radius: 8px;
+      border: 1px solid #f7c1cb;
+      outline: none;
+      background-color: #fff;
+    }
+
+    .cart {
+      color: #f28ca5;
+      font-weight: 500;
+    }
+
+    .breadcrumb {
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .breadcrumb a {
+      color: #f28ca5;
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    .product-container {
+      display: flex;
+      gap: 40px;
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 6px 20px rgba(242, 140, 165, 0.15);
+    }
+
+    .product-image {
+      flex: 1;
+    }
+
+    .product-image img {
+      width: 100%;
+      border-radius: 15px;
+      border: 2px solid #f7c1cb;
+    }
+
+    .thumbnail {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .thumbnail img {
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
+      cursor: pointer;
+      border: 1.5px solid #f7c1cb;
+      transition: transform 0.2s ease;
+    }
+
+    .thumbnail img:hover {
+      transform: scale(1.05);
+    }
+
+    .product-details {
+      flex: 1;
+    }
+
+    .product-details h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: #f28ca5;
+    }
+
+    .price {
+      font-size: 20px;
+      color: #f28ca5;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .reviews {
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .variant {
+      margin-bottom: 20px;
+    }
+
+    .variant h4 {
+      margin-bottom: 8px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .colors, .sizes {
+      display: flex;
+      gap: 10px;
+    }
+
+    .color-box, .size-box {
+      width: 40px;
+      height: 40px;
+      border: 1.5px solid #f7c1cb;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .color-box:hover, .size-box:hover {
+      background-color: #ffe4ea;
+      transform: scale(1.05);
+    }
+
+    /* Warna produk */
+    .color-box.Pink { background: #f8b6c4; }
+    .color-box.Putih { background: #fff; border: 1.5px solid #ddd; }
+    .color-box.Blue { background: #a3c9f5; }
+    .color-box.Beige { background: #f3e0b6; }
+
+    .btn-pesan {
+      background: #f28ca5;
+      color: #fff;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 500;
+      margin-top: 25px;
+      transition: 0.3s;
+      box-shadow: 0 4px 10px rgba(242, 140, 165, 0.3);
+    }
+
+    .btn-pesan:hover {
+      background: #e06f8f;
+      box-shadow: 0 4px 12px rgba(242, 140, 165, 0.5);
+    }
+
+    .description {
+      margin-top: 30px;
+      background: #fff9fa;
+      border-radius: 10px;
+      padding: 15px 20px;
+      border: 1px solid #f7c1cb;
+    }
+
+    .description h3 {
+      font-size: 16px;
+      margin-bottom: 8px;
+      color: #f28ca5;
+    }
+
+    .description p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 20px;
+      }
+      .product-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Mozation<span style="color:#f6b6c3;">.com</span></div>
+    <nav>
+      <a href="#">Fashion Anak</a>
+      <a href="#">Dress Wanita</a>
+      <a href="#">Busana Muslimah</a>
+    </nav>
+    <div class="search-cart">
+      <div class="search">
+        <input type="text" placeholder="Cari produk...">
+      </div>
+      <div class="cart">🛒 Cart (1)</div>
+    </div>
+  </header>
+
+  <div class="breadcrumb">
+    Home > <a href="#">Fashion Anak</a> > Dress Anak Sweet Blossom
+  </div>
+
+  <div class="product-container">
+    <div class="product-image">
+      <img src="Assets/butik.jpg" alt="Dress Anak Sweet Blossom">
+      <div class="thumbnail">
+        <img src="Assets/dewasa.jpg" alt="">
+        <img src="Assets/anak.jpg" alt="">
+        <img src="Assets/muslimah.jpg" alt="">
+      </div>
+      <button class="btn-pesan">Pesan Sekarang</button>
+    </div>
+
+    <div class="product-details">
+      <h2>Dress Anak Sweet Blossom</h2>
+      <p class="price">Rp. 85.000</p>
+      <p class="reviews">★★★★★ 2 ulasan</p>
+
+      <div class="variant">
+        <h4>Pilih Varian Warna:</h4>
+        <div class="colors">
+          <div class="color-box Pink" title="Pink"></div>
+          <div class="color-box Putih" title="Putih"></div>
+          <div class="color-box Blue" title="Sky Blue"></div>
+          <div class="color-box Beige" title="Beige"></div>
+        </div>
+      </div>
+
+      <div class="variant">
+        <h4>Pilih Ukuran:</h4>
+        <div class="sizes">
+          <div class="size-box">S</div>
+          <div class="size-box">M</div>
+          <div class="size-box">L</div>
+          <div class="size-box">XL</div>
+        </div>
+      </div>
+
+      <div class="description">
+        <h3>Deskripsi Produk</h3>
+        <p>
+          Dress anak <b>Sweet Blossom</b> terbuat dari bahan katun premium yang lembut, adem, dan nyaman dipakai seharian.
+          Desainnya elegan dengan sentuhan motif bunga pastel yang manis, membuat si kecil tampil ceria dan anggun di berbagai kesempatan.
+          Cocok digunakan untuk acara keluarga, pesta ulang tahun, maupun jalan santai.  
+          Tersedia berbagai warna lembut dan ukuran untuk anak usia 1–8 tahun.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

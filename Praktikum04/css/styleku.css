@@ -1,0 +1,76 @@
+body{
+    background-color: antiquewhite;
+}
+
+h1{
+    color: blue;
+    text-align: center;
+}
+
+#header{
+    background-color: lightsalmon;
+    text-align: center;
+}
+
+#header blockquote{
+    background-color: yellow;
+    border: 1px dotted black;
+}
+
+.tag{
+    text-align: center;
+}
+
+.tag ul{
+    list-style: none;
+}
+
+.gambar{
+    text-align: center;
+}
+
+#profil h3{
+    text-align: center;
+    background-color: aqua;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#beternak h3{
+    text-align: center;
+    background-color: yellow;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.koleksi img{
+    width: 23%;
+}
+
+.promo h2{
+    text-align: center;
+    color: red;
+}
+
+.promo h3{
+    text-align:center ;
+    background-color: cadetblue;
+    color: white;
+}
+
+.promo h4{
+    text-align: center;
+    background-color: aquamarine;
+    font-weight: bold;
+}
+
+.promo li{
+    text-align: center;
+    list-style: none;
+}
+
+.jawa{
+    color: blue;
+    font-size: 50px;
+    font-weight: bold;
+}
