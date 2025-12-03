@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chat Message</title>
+<link rel="stylesheet" href="css/chatbox.css">
+</head>
+<body>
+
+<h3 style="margin:20px;">Scroll halaman untuk melihat apakah chatbox tetap berada di pojok kanan bawah.</h3>
+<div style="height:2000px;"></div>
+
+<!-- Chatbox -->
+<div id="chatbox" class="chatbox-closed">
+    <div id="chat-header">
+        Chat Box
+        <button id="toggleBtn" style="float:right; background:none; border:none; font-size:18px; color:white; cursor:pointer;">_</button>
+    </div>
+
+    <div id="chat-body" class="hidden">
+        <div id="messages"></div>
+        <div id="composer">
+            <input type="text" id="msgInput" placeholder="Tulis pesan...">
+            <button id="sendBtn">Kirim</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/chatbox.js"></script>
+</body>
+</html>

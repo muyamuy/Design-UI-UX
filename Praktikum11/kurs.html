@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Rupiah</title>
+    <link rel="stylesheet" href="css/kurs-pink.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <h2>Kurs Rupiah - Mata Uang Asing</h2>
+
+    <table>
+        <tr>
+            <th>Masukan Nilai</th>
+            <th>Valas</th>
+            <th>Nilai Rupiah</th>
+        </tr>
+        <tr>
+            <td><input type="number" id="amount" placeholder="Masukkan angka"></td>
+            <td>
+                <select id="currency">
+                    <option value="">-- Pilih --</option>
+                    <option value="9915">Dollar US</option>
+                    <option value="13472">Dollar Singapore</option>
+                    <option value="874">Ringgit Malaysia</option>
+                    <option value="120">Yen Jepang</option>
+                    <option value="15888">Euro</option>
+                    <option value="3592">Riyal Arab Saudi</option>
+                </select>
+            </td>
+            <td><input type="text" id="result" readonly></td>
+        </tr>
+    </table>
+</div>
+
+<script>
+    const amount = document.getElementById("amount");
+    const currency = document.getElementById("currency");
+    const result = document.getElementById("result");
+
+    currency.addEventListener("change", convert);
+    amount.addEventListener("input", convert);
+
+    function convert() {
+        const nilaiAsing = parseFloat(amount.value);
+        const kurs = parseFloat(currency.value);
+
+        if (!nilaiAsing || !kurs) {
+            result.value = "";
+            return;
+        }
+
+        const nilaiRupiah = nilaiAsing * kurs;
+        result.value = nilaiRupiah.toLocaleString("id-ID");
+    }
+</script>
+
+</body>
+</html>

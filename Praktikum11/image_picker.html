@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <link rel="stylesheet" href="css/style-pink.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Image Picker 💖</h2>
+
+    <select id="imageSelect">
+        <option value="">-- Pilih Gambar --</option>
+        <option value="images/img1.jpg">Gambar 1</option>
+        <option value="images/img2.jpg">Gambar 2</option>
+        <option value="images/img3.jpg">Gambar 3</option>
+        <option value="images/img4.jpg">Gambar 4</option>
+        <option value="images/img5.jpg">Gambar 5</option>
+        <option value="images/img6.jpg">Gambar 6</option>
+    </select>
+
+    <div id="preview"></div>
+</div>
+
+<script>
+    const select = document.getElementById("imageSelect");
+    const preview = document.getElementById("preview");
+
+    select.addEventListener("change", function () {
+        const val = this.value;
+
+        preview.innerHTML = ""; 
+
+        if (!val) return;
+
+        const filename = val.split("/").pop();
+        alert("Anda memilih file: " + filename);
+
+        const img = document.createElement("img");
+        img.src = val;
+        img.alt = filename;
+
+        preview.appendChild(img);
+    });
+</script>
+
+</body>
+</html>

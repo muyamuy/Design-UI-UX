@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Validation</title>
+<link rel="stylesheet" href="css/form-style.css">
+</head>
+<body>
+
+<h2>Form Pemesanan Tiket</h2>
+
+<form id="ticketForm" novalidate>
+  <div class="form-group">
+    <label>Nama Pelanggan</label>
+    <input type="text" id="nama">
+    <span class="error" id="err-nama"></span>
+  </div>
+
+  <div class="form-group">
+    <label>Email</label>
+    <input type="text" id="email">
+    <span class="error" id="err-email"></span>
+  </div>
+
+  <div class="form-group">
+    <label>Jam Keberangkatan (HH.MM)</label>
+    <input type="text" id="jam" placeholder="contoh: 08.30">
+    <span class="error" id="err-jam"></span>
+  </div>
+
+  <div class="form-group">
+    <label>Tujuan Keberangkatan</label>
+    <input type="text" id="tujuan">
+    <span class="error" id="err-tujuan"></span>
+  </div>
+
+  <div class="form-group">
+    <label>Jumlah Tiket (1-10)</label>
+    <input type="number" id="tiket">
+    <span class="error" id="err-tiket"></span>
+  </div>
+
+  <button type="submit" id="submitBtn">Submit</button>
+</form>
+
+<div id="summary"></div>
+
+<script src="js/validation.js"></script>
+</body>
+</html>

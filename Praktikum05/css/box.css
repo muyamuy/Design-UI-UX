@@ -1,0 +1,247 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h2 {
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  /* ===============================
+     PRAKTIKUM 7.1
+  =============================== */
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+  }
+  
+  .kotak {
+    width: 250px;
+    min-height: 180px;
+    background-color: #fff0f6;
+    color: #4a0035;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(236, 64, 122, 0.2);
+    border: 2px solid #f8bbd0;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .kotak:hover {
+    transform: translateY(-5px);
+  }
+  
+  .kotak h3 {
+    color: #ad1457;
+    margin-top: 0;
+  }
+  
+  .kotak p {
+    font-size: 0.9em;
+  }
+  
+  .btn {
+    background-color: #ec407a;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85em;
+    margin-top: 10px;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #ad1457;
+  }
+  
+  /* Box warna dasar (seperti latihan awal) */
+  .merah { background: linear-gradient(135deg, #f8bbd0, #f48fb1); }
+  .hijau { background: linear-gradient(135deg, #fce4ec, #f8bbd0); }
+  .biru { background: linear-gradient(135deg, #f8bbd0, #f06292); }
+  
+  /* Versi dengan gambar */
+  .kotak img {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 8px;
+  }
+  
+  .caption {
+    font-size: 0.9em;
+    color: #4a0035;
+  }
+  
+  
+  /* ===============================
+     PRAKTIKUM 7.2
+  =============================== */
+  .papan {
+    position: relative;
+    width: 550px;
+    height: 400px;
+    margin: 30px auto;
+    background: linear-gradient(135deg, #ffe6ef, #ffc1e3);
+    border: 3px solid #f48fb1;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(236, 64, 122, 0.2);
+  }
+  
+  .kecil {
+    position: absolute;
+    width: 200px;
+    height: 170px;
+    background-color: white;
+    color: #880e4f;
+    text-align: center;
+    font-size: 0.9em;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    overflow: hidden;
+  }
+  
+  .kecil img {
+    width: 100%;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 4px;
+  }
+  
+  .kecil h4 {
+    margin: 4px 0;
+    color: #ad1457;
+    font-size: 1em;
+  }
+  
+  .kecil p {
+    margin: 0;
+    font-size: 0.8em;
+  }
+  
+  /* Posisi empat kotak */
+  .kotak1 { top: 15px; left: 15px; }
+  .kotak2 { top: 15px; right: 15px; }
+  .kotak3 { bottom: 15px; left: 15px; }
+  .kotak4 { bottom: 15px; right: 15px; }
+  
+  /* ===============================
+     PRAKTIKUM 7.3
+  =============================== */
+  header {
+    background: linear-gradient(135deg, #f48fb1, #ec407a);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(236, 64, 122, 0.4);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.8em;
+  }
+  
+  header p {
+    font-style: italic;
+    margin-top: 5px;
+  }
+  
+  nav {
+    background-color: #f8bbd0;
+    color: #880e4f;
+    padding: 12px;
+    text-align: center;
+    margin: 12px 0;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  }
+  
+  nav a {
+    color: #880e4f;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.3s;
+  }
+  
+  nav a:hover {
+    color: white;
+    background-color: #ec407a;
+    padding: 5px 8px;
+    border-radius: 6px;
+  }
+  
+  main {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .konten {
+    flex: 3;
+    background-color: #fff0f6;
+    padding: 20px;
+    border: 2px solid #f8bbd0;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+  }
+  
+  .konten h2 {
+    color: #ad1457;
+  }
+  
+  .konten p {
+    color: #5c0050;
+  }
+  
+  .konten img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 2px solid #f48fb1;
+  }
+  
+  .sidebar {
+    flex: 1;
+    background-color: #ffe4ec;
+    padding: 20px;
+    border: 2px solid #f8bbd0;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+  }
+  
+  .sidebar h3 {
+    color: #ad1457;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 8px;
+    color: #6a1b9a;
+  }
+  
+  footer {
+    margin-top: 15px;
+    background: linear-gradient(135deg, #ec407a, #ad1457);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(236, 64, 122, 0.3);
+  }

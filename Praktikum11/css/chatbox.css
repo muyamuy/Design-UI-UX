@@ -1,0 +1,114 @@
+#chatbox {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 300px;
+    background: #fff0f6;
+    border: 3px solid #ff9ab8;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(255, 105, 180, 0.35);
+    overflow: hidden;
+    font-family: "Poppins", Arial, sans-serif;
+  }
+  
+  /* Header */
+  #chat-header {
+    background: #ff4d88;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 17px;
+  }
+  
+  /* Chat body (messages area) */
+  #messages {
+    height: 260px;
+    overflow-y: auto;
+    padding: 12px;
+    background: #ffe6f1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  /* Bubble message style */
+  .message {
+    max-width: 80%;
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.3;
+    animation: fadeIn 0.3s;
+  }
+  
+  /* User message bubble */
+  .message.user {
+    background: #ff8fb4;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 2px;
+  }
+  
+  /* Bot message bubble */
+  .message.bot {
+    background: white;
+    border: 1.6px solid #ff8fb4;
+    color: #b8004a;
+    align-self: flex-start;
+    border-bottom-left-radius: 2px;
+  }
+  
+  /* Input composer area */
+  #composer {
+    display: flex;
+    border-top: 1px solid #ffc1d6;
+    background: #fff0f6;
+  }
+  
+  #msgInput {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: transparent;
+    color: #b8004a;
+  }
+  
+  #msgInput::placeholder {
+    color: #ff89a5;
+  }
+  
+  /* Send button */
+  #sendBtn {
+    background: #ff4d88;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-weight: 600;
+    border-left: 1px solid #ffc1d6;
+    transition: 0.3s;
+  }
+  
+  #sendBtn:hover {
+    background: #d6336c;
+  }
+  
+  /* Smooth scroll */
+  #messages::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  #messages::-webkit-scrollbar-thumb {
+    background: #ff8fb4;
+    border-radius: 10px;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {opacity: 0; transform: translateY(4px);}
+    to   {opacity: 1; transform: translateY(0);}
+  }

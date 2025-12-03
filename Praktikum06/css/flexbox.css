@@ -1,0 +1,180 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff0f6;
+    color: #4a0035;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #ad1457;
+    margin-top: 20px;
+  }
+  
+  .header {
+    background: linear-gradient(135deg, #f48fb1, #ec407a);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 3px 10px rgba(236, 64, 122, 0.3);
+  }
+  
+  /* ---------------------
+     FLEXBOX 1
+  ----------------------*/
+  .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #f8bbd0;
+    padding: 10px;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #880e4f;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: white;
+    background-color: #ec407a;
+    padding: 6px 10px;
+    border-radius: 6px;
+  }
+  
+  .main-container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .content {
+    flex: 3;
+    background-color: #ffe4ec;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #f8bbd0;
+  }
+  
+  .sidebar {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #f8bbd0;
+  }
+  
+  .footer {
+    background: #ec407a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  
+  /* ---------------------
+     FLEXBOX 2
+  ----------------------*/
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .product-card {
+    background-color: white;
+    border: 2px solid #f8bbd0;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(236, 64, 122, 0.2);
+  }
+  
+  .product-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .product-card h4 {
+    color: #ad1457;
+    margin: 10px 0 5px;
+  }
+  
+  /* ---------------------
+     FLEXBOX 3
+  ----------------------*/
+  .gallery-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .gallery-info {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #f8bbd0;
+  }
+  
+  .gallery-items {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .gallery-items img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #f48fb1;
+  }
+  
+  /* ---------------------
+     FLEXBOX 4
+  ----------------------*/
+  .layout-horizontal {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #f8bbd0;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  
+  .layout-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #f8bbd0;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  
+  .box {
+    background-color: #fce4ec;
+    border: 2px solid #f8bbd0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+    color: #ad1457;
+    font-weight: bold;
+  }
